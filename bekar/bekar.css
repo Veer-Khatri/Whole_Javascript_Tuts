@@ -1,0 +1,62 @@
+html{
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/*
+#border_radius{
+    font-size: 5rem;
+    display: flex;
+    height: 50vh;
+    width: 50vw;
+    margin: 25vh 25vw;
+    justify-content: center;
+    align-items: center;
+    /* border work 
+    background-color: lightblue;
+    border-radius: 57% 43% 88% 12% / 53% 9% 46% 71% ;
+    /* we can also use clippath property like this this property sets clips and region outside clip is not shown 
+    /* clip-path: polygon(64% 70%, 95% 66%, 40% 50%, 25% 66%, 33% 80%, 0% 0%, 90% 0% more can be given} 
+}
+*/
+#wave_background{
+    font-size: 5rem;
+    display: flex;
+    height: 60vh;
+    width:  100vw;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    /* border work */
+    background-color: lightblue;
+}
+
+
+#wave_background::before{
+    content: "";
+    width: 30vw;
+    height: 19vh;
+    position: absolute;
+    display: block;
+    top: 50vh;
+    right: -1%;
+    background-color:#f8f400;
+    border-radius: 50% 51% 53% 44% / 24% 26% 74% 75% ;
+    
+    
+}
+
+
+#wave_background::after{
+    content: "";
+    width: 51vw;
+    height: 17.5vh;
+    position: absolute;
+    display: block;
+    top: 51vh;
+    left: -1%;
+    border-radius: 50% 51% 53% 46% / 80% 84% 15% 19% ;
+    background-color: lightblue;
+    }

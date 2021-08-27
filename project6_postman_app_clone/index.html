@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>postman clone</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+
+<body>
+    <h1 id="heading">Postman Clone</h1>
+    <div  class="container">
+        <div class="inputs">
+            <div class="input_box">
+                <label for="url">URL:</label>
+                <input type="text" id="url" placeholder="enter your URL ">
+            </div>
+            <div class="input_box radio">
+                <label for="radio">Request type:</label>
+                <div class="radiobutton makingFlex ">
+                    POST<input type="radio" name="radio" id='get_radio' value="POST">
+                    GET<input type="radio" name="radio" id="post_radio" value="GET">
+                </div>
+            </div>
+            <div class="input_box radio">
+                <label for="radio">content type:</label>
+                <div class="radiobutton makingFlex">
+                    JSON<input type="radio" id="json_radio" name="content" value="JSON">
+                    Cutsom Parameters<input type="radio" name="content" id="custom_radio" value="custom">
+                </div>
+            </div>
+            <div id="parameters_box" class="input_box parameters ">
+                <label for="param">Key/Value Pair:</label>
+                <div calss="key_value">
+                    <input type="text" class="paramKey1" placeholder="enter pararmeter 1 key ">
+                    <input type="text" class="paramValue1`" placeholder="enter pararmeter 1 value ">
+                    <button id="addBTN" class="addbtn addBTNclass WASTE_CLASS">+</button>
+                </div>
+            </div>
+            <div id="more_params" class="input_box parameters" ></div>
+
+
+            <div id="json_box" class="input_box parameters">
+                <label for="param">Enter Request JSON:</label>
+                <textarea name="textarea" id="JSON_textarea" cols="30" rows="10"></textarea>
+            </div>
+
+            <div id="submitDiv">
+                <button id="submitBTN" class="submitbtn">submit</button>
+            </div>
+
+            <!-- Response box -->
+            <div class="input_box parameters ">
+                <label for="param">Response:</label>
+                <textarea name="textarea" id="response_textarea" cols="30" rows="10"
+                    placeholder=" response will be shown here"></textarea>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+
+</body>
+<script src="brain.js"></script>
+
+</html>

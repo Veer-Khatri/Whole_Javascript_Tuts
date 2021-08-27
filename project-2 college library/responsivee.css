@@ -1,0 +1,139 @@
+html{
+    width: 100vw;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+    width: 20px;
+    position: absolute;
+    top: 5px;
+    right: 35px;
+    
+}
+
+.line{
+    margin: 5px;
+    padding: 3px 15px;
+    background-color: black;
+}
+@media only screen and (max-width:1450px ) {
+    .navigation{
+        margin: 0 2em;
+    }
+}
+@media only screen and (max-width:1400px ) {
+    .navigation li{
+        margin: 0 4rem;
+    }
+}
+@media only screen and (max-width:1300px ) {
+    .navigation li{
+        margin: 0 3rem;
+    }
+}
+@media only screen and (max-width:1201px ) {
+    .navigation li{
+        margin: 0 1.5rem;
+    }
+}
+@media only screen and (max-width:1060px ) {
+    .navigation li a{
+        margin: 0 ;
+    }
+}
+@media only screen and (max-width:960px ) {
+    .container{
+        font-size: 20px;
+    }
+    .navigation li{
+        margin: 0 1rem;
+    }
+    .searchbox #search{
+        font-size: 18px;
+        width: 180px;
+    }
+    .searchbox #searchbtn{
+        font-size: 18px;
+    }
+    #webname{
+        margin-left: 5px;
+    }
+    
+}
+@media only screen and (max-width:760px ) {
+    .container{
+        font-size: 22px;
+        flex-direction: column;
+    }
+    #webname{
+        font-size: 25px;
+        margin: 5px;
+        margin-bottom:10px ;
+    }
+    .container .navigation{
+        flex-direction: column;
+        
+    }
+    .container .navigation li{
+        margin: 7px 0;
+    }
+    .container .searchbox{
+        margin: 15px 0 ;
+    }
+    .searchbox #search{
+        font-size: 22px;
+        width: 250px;
+    }
+    .searchbox #searchbtn{
+        font-size: 22px;
+    }
+    .menu{
+        display: block;
+    }
+    .display_none_toggle{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:425px ) {
+    .searchbox #search{
+        width: 180px;
+        font-size: 18px;
+        text-align: center;
+        align-items: center;
+    }
+    #webname{
+        font-size: 20px;
+        width: fit-content;
+    }
+    .searchbox #searchbtn{
+         font-size: 18px;
+     }
+}
+
+
+@media only screen and (max-width:340px ) {
+   
+    .searchbox #search{
+       width: 150px;
+       font-size: 15px;
+    }
+    .searchbox #searchbtn{
+        font-size: 15px;
+    }
+}
+.change #upline{
+    transition-duration: 300ms;
+    transform: rotate(45deg) translate(-4.5px,11px)
+    
+}
+.change #middleline{
+    transition-duration: 300ms;
+    opacity: 0;
+
+}
+.change #bottomline{
+    transition-duration: 300ms;
+    transform: rotate(-45deg) translate(-7.9px, -7.8px);
+}

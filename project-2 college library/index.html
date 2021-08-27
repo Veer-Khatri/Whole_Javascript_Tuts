@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurprisesLibrary</title>
+    <link rel="shortcut icon" href="favicon-16x16.png" />
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="responsivee.css">
+</head>
+
+<body>
+    <div id="home">
+        <div class="container">
+            <h4 id="webname">SurprisesLibrary</h4>
+            <nav class="navigation display_none_toggle">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#notes">Notes</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </nav>
+            <div class="searchbox display_none_toggle">
+                <input type="search" name="search" id="search" placeholder="search notes">
+                <button id="searchbtn">search</button>
+            </div>
+        </div>
+        <div class="menu" onclick="menuToggle(this)">
+            <div class="line " id="upline"></div>
+            <div class="line" id="middleline"></div>
+            <div class="line" id="bottomline"></div>
+        </div>
+    </div>
+
+    <form id="libraryForm">
+        <div class="form_div" id="book_name_div">
+            <label for="bookName">Book : </label>
+            <input type="text" id="bookName" placeholder="Enter book name">
+        </div>
+
+        <div class="form_div" id="author_name_div">
+            <label for="authorName">Author : </label>
+            <input type="text" id="authorName" placeholder="Enter author name">
+        </div>
+
+        <div class="form_div">
+            <label id="radio_type">Type : </label>
+            <div id="radio_button_div">
+                <div>
+                    <input type="radio" id="fictionbtn" name="radio"> Fiction
+                </div>
+
+                <div>
+                    <input type="radio" id="programmingbtn" name="radio"> Programming
+                </div>
+                <div>
+                    <input type="radio" id="mathematicsbtn" name="radio"> Mathematics
+                </div>
+                <div>
+                    <input type="radio" id="otherbtn" name="radio"> other
+                </div>
+            </div>
+        </div>
+        <div id="add_book_div">
+            <input type="submit" id="add_book_btn" value="Add Book">
+        </div>
+    </form>
+    <table >
+        <thead>
+            <tr>
+                <th class="table_heading" scope="col">#</th>
+                <th class="table_heading" scope="col">Book Name</th>
+                <th class="table_heading" scope="col">Author Name</th>
+                <th class="table_heading" scope="col">Book Type</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody" >
+            <tr >
+                <th scope="row" class="th_counting">1</th>
+                <td>the Life</td>
+                <td>chullu chatri</td>
+                <td>other</td>
+            </tr>
+            <tr>
+                <th scope="row" class="th_counting">2</th>
+                <td>Multitalanted Boy</td>
+                <td>chullu chatri</td>
+                <td>other</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<!-- <script src="script.js"></script> -->
+<script src="script_classes.js"></script>
+
+</html>

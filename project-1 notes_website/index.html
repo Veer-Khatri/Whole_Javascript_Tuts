@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagicNotes.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div id="home">
+        <div class="container">
+            <h4 id="webname">MagicNotes</h4>
+            <nav class="navigation display_none_toggle" >
+                <li><a href="#home">Home</a></li>
+                <li><a href="#notes">Notes</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </nav>
+            <div class="searchbox display_none_toggle" >
+                <input type="search" name="search" id="search" placeholder="search notes">
+                <button id="searchbtn">search</button>
+            </div>
+        </div>
+        <div class="menu" onclick="menuToggle(this)">
+            <div class="line " id="upline"></div>
+            <div class="line" id="middleline"></div>
+            <div class="line" id="bottomline"></div>
+        </div>
+        <section class="addnote">
+            <h1 id="heading">Welcome to Magic Notes</h1>
+            <div >Add a Note</div>
+            <input type="text" placeholder="Enter Note Title" id="titlenote">
+            <textarea name="note" id="note" cols="25" rows="14" placeholder="Write Your Note Here"></textarea>
+            <button id="notebtn">Add Note</button>
+        </section>
+    </div>
+    <!-- YN means your notes -->
+    <h1 id="headingYN">Your Notes</h1>
+    <section id="notes">
+        <!-- <div class="parentdiv">
+            <h4 class="noteheading"></h4>
+            <div class="notediv"></div>
+            <button class="deletebtn">Delete Note</button>
+        </div> -->
+    </section>
+</body>
+<script src="brain.js"></script>
+</html>

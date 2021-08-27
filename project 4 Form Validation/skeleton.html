@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <title>Tamu travellers</title>
+</head>
+
+<body>
+    <h1>TaMpU tRaVeLlErS | travel your way</h1>
+    <form id="form">
+        
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        <input type="tel" name="mob" id="mob" placeholder="Enter your contact number" required>
+        <input type="number" name="pincode" id="pincode" placeholder="Enter your district's pincode" min="100000" max="999999" required>
+        
+        <label for="destination">Enter your destination
+            <select name="destination" id="destination" required>
+            <option value=" delhi">Delhi</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="gurugram">Gurugram</option>
+                <option value="agra">Agra</option>
+                <option value="mumbai">Mumbai</option>
+            </select>
+        </label>
+
+        <label for="cars"> choose your car
+            <select name="cars" id="cars" required>
+                <optgroup label="7seater">
+                    <option value="7_fortuner">fortuner</option>
+                    <option value="7_innova">innova</option>
+                    <option value="7_scorpio">scorpio</option>
+                    <option value="7_mercedes">mercedes</option>
+                    <option value="7_audi">audi</option>
+                    <option value="7_bmw">bmw</option>
+                    <option value="7_Tata_harier">Tata_harier</option>
+                </optgroup>
+        
+                <optgroup label="5seater">
+                    <option value="5_mercedes">mercedes</option>
+                    <option value="5_audi">audi</option>
+                    <option value="5_bmw">bmw</option>
+                    <option value="5_swift">swift</option>
+                    <option value="5_nexon">nexon</option>
+                    <option value="5_maruti_i20">maruti_i20</option>
+                    <option value="5_Lowest_price_car">Lowest price car</option>
+                </optgroup>
+            </select>
+        </label>
+
+        <textarea name="yourLocation" id="yourLocation" cols="30" rows="10"
+            placeholder="Enter your pickup location" required></textarea>
+        
+            <button type="submit" id="submit">book</button>
+    </form>
+</body>
+<script src="brain.js"></script>
+</html>

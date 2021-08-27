@@ -1,0 +1,20 @@
+button{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: monospace, 'Courier New', Courier;
+    outline: none;
+    border: 6px solid black ;
+    margin: 20px;
+    padding: 15px;
+}
+#fetch_get_btn, #fetch_post_btn{
+    background-color: rgb(38, 204, 38);
+}
+#populate_btn{
+    background-color: red;
+}
+button:hover{
+    margin: 26px;
+    border: none;
+    color: white;
+}

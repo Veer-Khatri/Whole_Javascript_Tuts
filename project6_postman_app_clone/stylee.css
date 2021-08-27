@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+   display: flex;
+   
+   text-align: center;
+   
+   
+   
+}
+.input_box{
+    display: grid;
+    text-align: center;
+    width: 90vw;
+    grid-template-columns: 3fr 6fr;
+    column-gap:50px;
+}
+.input_box, .input_box input ,.input_box textarea   {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px
+    
+}
+.input_box input {
+    width: 50vw;
+    justify-content: center;
+}
+.input_box label{
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}
+.radio input{
+    margin-top: 10px;
+    width: 10vw;
+    margin: 0;
+    justify-content: center;
+}
+.radiobutton{
+
+    justify-content: center ;
+
+}
+
+.parameters label{
+    text-align: center;
+
+    
+}
+
+.parameters input {
+    width: 20vw;
+    text-align: center;
+}
+.parameters .addbtn{
+    font-size: 25px;
+    width: 3vw;
+    background-color: rgb(47, 47, 248);
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    
+}
+
+.key_value{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    width: 6fr;
+}
+
+.submitbtn{
+    font-size: 25px;
+    width: 25vw;
+    background-color: rgb(50, 50, 241);
+    outline: none;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+}
+
+#submitDiv{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    margin-left: 250px;
+    align-items: center;
+}
